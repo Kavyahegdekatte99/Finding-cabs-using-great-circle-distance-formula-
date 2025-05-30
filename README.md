@@ -3,7 +3,7 @@
 Given GPS co-ordinates(in degrees) of a person who needs a cab and co-ordinates of all the cabs in the city stored in a text file in JSON format, find the user-id and name of all the cab drivers available in 50 km proximity.
 
 **Instruction to run the program**
- ============= 
+
 * Compile the code using cmd: g++ main.cpp.
 
 * After successful compilation, run it along with passing the file name customers.json using cmd: ./a.out ./customers.json
@@ -11,7 +11,7 @@ Given GPS co-ordinates(in degrees) of a person who needs a cab and co-ordinates 
 * A new file named result.json will be created on the same directory where the code and customers.json file is existing.
 
 Approach Used
-==============
+
 
 * Obtain latitude and longitude of each cab in string format along with their user-id and name from the JSON encoded input file.
 
@@ -25,12 +25,10 @@ Approach Used
 
 
 Great-circle distance
-===========
+
 * It is the shortest distance between two points on the surface of a sphere, measured along the surface of the sphere (as opposed to a straight line through the sphere's interior). The distance between two points in Euclidean space is the length of a straight line between them, but on the sphere there are no straight lines. In spaces with curvature, straight lines are replaced by geodesics. Geodesics on the sphere are circles on the sphere whose centers coincide with the center of the sphere, and are called 'great circles'.
 
 **Formulae**
-
-![image](https://user-images.githubusercontent.com/85600318/191788842-b4a01f8f-87ba-45f1-a4cf-1c776f3161c2.png)
 
 The largest circle that can be drawn on the sphere surface is the great circle. The shortest distance between any two points on the sphere surface is the Great Circle distance. Historically, the Great circle is also called as an Orthodrome or Romanian Circle.
 
